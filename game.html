@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>มินิเกมแยกขยะ - EcoWise</title>
+  
+  <meta name="description" content="เกมท้าทายการแยกขยะลงถังให้ถูกต้องใน 60 วินาที เรียนรู้การคัดแยกขยะ 4 ประเภทอย่างสนุกสนาน">
+  
+  <!-- Google Fonts: Prompt & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons (CDN) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Bootstrap 5 CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="fw-bold fs-5 text-success">กำลังเตรียมสนามประลองแยกขยะ...</div>
+    <small class="text-muted">เตรียมความพร้อมใน 60 วินาที!</small>
+  </div>
+
+  <!-- Unified Navigation Bar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+  <!-- Main Game Section -->
+  <main class="section-padding" style="min-height: 85vh;">
+    <div class="container game-container">
+
+      <!-- Header Section -->
+      <div class="text-center mb-4 reveal-fade-up">
+        <span class="badge-pill-soft mb-2">
+          <i class="fa-solid fa-gamepad text-success"></i> Interactive Challenge
+        </span>
+        <h1 class="display-5 fw-bold">เกมท้าทายแยกขยะลงถัง</h1>
+        <p class="text-muted" style="max-width: 600px; margin: 0 auto;">
+          ลากขยะที่ปรากฏขึ้นแบบสุ่มไปใส่ถังขยะที่ถูกต้องให้ได้มากที่สุดภายในเวลา <strong>1 นาที (60 วินาที)</strong>
+        </p>
+      </div>
+
+      <!-- Start Screen / Game Instructions Card -->
+      <div id="gameStartScreen" class="glass-card p-4 p-md-5 text-center reveal-fade-up">
+        <div class="brand-icon-wrap mx-auto mb-3" style="width: 72px; height: 72px; font-size: 2rem;">
+          <i class="fa-solid fa-recycle"></i>
+        </div>
+        <h3 class="fw-bold mb-3" style="color: var(--color-brand-deep);">กติกาการเล่น</h3>
+        
+        <div class="row g-3 text-start justify-content-center mb-4">
+          <div class="col-md-5">
+            <div class="p-3 rounded-3 bg-white bg-opacity-75 border h-100">
+              <div class="fw-bold mb-1"><i class="fa-solid fa-stopwatch text-warning me-2"></i> เวลาจำกัด 60 วินาที</div>
+              <small class="text-muted">ระบบจะนับถอยหลังทันทีเมื่อคุณกดปุ่มเริ่มเกม</small>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="p-3 rounded-3 bg-white bg-opacity-75 border h-100">
+              <div class="fw-bold mb-1"><i class="fa-solid fa-arrows-up-down-left-right text-success me-2"></i> ลาก หรือ กดเลือกถัง</div>
+              <small class="text-muted">ลากขยะไปวางบนถัง หรือแตะ/คลิกที่ถังขยะได้โดยตรง</small>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="p-3 rounded-3 bg-white bg-opacity-75 border h-100">
+              <div class="fw-bold mb-1"><i class="fa-solid fa-star text-warning me-2"></i> คะแนน & ป๊อบอัพทันที</div>
+              <small class="text-muted">ตอบถูกรับ +10 คะแนน / ตอบผิดไม่ได้รับคะแนน พร้อมป๊อบอัพเตือน</small>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="p-3 rounded-3 bg-white bg-opacity-75 border h-100">
+              <div class="fw-bold mb-1"><i class="fa-solid fa-list-check text-primary me-2"></i> สรุปผล & เฉลยละเอียด</div>
+              <small class="text-muted">เมื่อหมดเวลา จะแสดงสรุปผลคะแนนและเฉลยข้อที่ผิดทุกข้อ</small>
+            </div>
+          </div>
+        </div>
+
+        <button id="startGameBtn" class="btn btn-eco-primary btn-lg px-5 py-3 shadow-lg fs-5">
+          <i class="fa-solid fa-play me-2"></i> กดเพื่อเริ่มเกมทันที!
+        </button>
+      </div>
+
+      <!-- Active Game Playing Area (Initially Hidden) -->
+      <div id="activeGameArea" class="d-none">
+        
+        <!-- Game HUD (Timer, Score, Count) -->
+        <div class="game-hud">
+          <div class="hud-item">
+            <div class="hud-label"><i class="fa-regular fa-clock text-warning"></i> เวลาที่เหลือ</div>
+            <div class="hud-value" id="gameTimer">60s</div>
+          </div>
+          <div class="hud-item">
+            <div class="hud-label"><i class="fa-solid fa-award text-success"></i> คะแนนรวม</div>
+            <div class="hud-value text-success" id="gameScore">0</div>
+          </div>
+          <div class="hud-item">
+            <div class="hud-label"><i class="fa-solid fa-box-archive text-primary"></i> ขยะที่แยกแล้ว</div>
+            <div class="hud-value text-primary" id="gameSortedCount">0</div>
+          </div>
+        </div>
+
+        <!-- Waste Spawn Arena -->
+        <div class="game-arena" id="wasteSpawnArena">
+          <!-- Draggable item dynamically inserted by game.js -->
+        </div>
+
+        <!-- 4 Bin Drop Targets -->
+        <div class="bins-drop-grid">
+          <!-- 1. Organic Bin (Green) -->
+          <div class="bin-drop-target bin-organic" data-bin-category="organic" title="คลิกหรือลากขยะมาใส่ที่นี่">
+            <div class="bin-model">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <div class="bin-title text-success">ถังขยะอินทรีย์</div>
+            <div class="bin-hint">เศษอาหาร, ผลไม้, ใบไม้, เปลือกไข่</div>
+          </div>
+
+          <!-- 2. Recycle Bin (Yellow) -->
+          <div class="bin-drop-target bin-recycle" data-bin-category="recycle" title="คลิกหรือลากขยะมาใส่ที่นี่">
+            <div class="bin-model">
+              <i class="fa-solid fa-arrows-spin"></i>
+            </div>
+            <div class="bin-title text-warning">ถังขยะรีไซเคิล</div>
+            <div class="bin-hint">ขวดพลาสติก, กระป๋อง, แก้ว, ลังกระดาษ</div>
+          </div>
+
+          <!-- 3. General Bin (Blue) -->
+          <div class="bin-drop-target bin-general" data-bin-category="general" title="คลิกหรือลากขยะมาใส่ที่นี่">
+            <div class="bin-model">
+              <i class="fa-solid fa-trash"></i>
+            </div>
+            <div class="bin-title text-primary">ถังขยะทั่วไป</div>
+            <div class="bin-hint">ซองขนม, กล่องโฟม, หลอด, ทิชชู่</div>
+          </div>
+
+          <!-- 4. Hazard Bin (Orange/Red) -->
+          <div class="bin-drop-target bin-hazard" data-bin-category="hazard" title="คลิกหรือลากขยะมาใส่ที่นี่">
+            <div class="bin-model">
+              <i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <div class="bin-title text-danger">ถังขยะอันตราย</div>
+            <div class="bin-hint">ถ่านไฟฉาย, หลอดไฟ, กระป๋องสเปรย์, ยา</div>
+          </div>
+        </div>
+
+        <!-- Restart Button below grid -->
+        <div class="text-center mt-4">
+          <button id="restartGameBtn" class="btn btn-sm btn-outline-secondary rounded-pill px-3">
+            <i class="fa-solid fa-rotate-right me-1"></i> เริ่มเกมใหม่ตั้งแต่ต้น
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Floating Toast Feedback (Correct / Wrong) -->
+  <div id="gameFeedbackToast" class="game-feedback-toast" role="alert"></div>
+
+  <!-- End Game Results Summary Modal -->
+  <div id="resultsModalOverlay" class="results-modal-overlay">
+    <div class="results-modal-box">
+      <!-- Modal Header -->
+      <div class="results-header">
+        <span class="badge bg-warning-subtle text-dark px-3 py-1 rounded-pill fw-bold mb-2">
+          <i class="fa-solid fa-trophy me-1 text-warning"></i> สรุปผลการแข่งขัน
+        </span>
+        <h2 class="fw-bold mb-1">ยินดีด้วย! คุณทำภารกิจสำเร็จ</h2>
+        <div class="display-6 fw-extrabold text-success my-2" id="resultsTotalScore">0 คะแนน</div>
+        <div id="resultsStatsText"></div>
+      </div>
+
+      <!-- Modal Body: Review List & Explanations -->
+      <div class="results-body">
+        <h5 class="fw-bold mb-3">
+          <i class="fa-solid fa-clipboard-check text-primary me-2"></i> เฉลยและวิเคราะห์การคัดแยกขยะ:
+        </h5>
+        <div id="resultsList">
+          <!-- Injected dynamically by game.js -->
+        </div>
+      </div>
+
+      <!-- Modal Footer -->
+      <div class="results-footer">
+        <button id="playAgainModalBtn" class="btn btn-eco-primary px-4 py-2">
+          <i class="fa-solid fa-rotate-right me-2"></i> เล่นใหม่อีกครั้ง
+        </button>
+        <a href="daily-waste.html" class="btn btn-outline-secondary px-3 py-2 rounded-pill">
+          <i class="fa-solid fa-book-open me-1"></i> ศึกษาข้อมูลขยะเพิ่มเติม
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollTopBtn" title="กลับขึ้นด้านบน" aria-label="กลับขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Unified Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Unified Navbar & Footer Component -->
+  <script src="assets/js/navbar-footer.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Audio Manager (BGM & SFX) -->
+  <script src="assets/js/audio-manager.js"></script>
+
+  <!-- Game Logic JS -->
+  <script src="assets/js/game.js"></script>
+
+</body>
+</html>

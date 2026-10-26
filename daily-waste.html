@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="th" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ขยะในชีวิตประจำวัน - EcoWise</title>
+  
+  <meta name="description" content="ทำความรู้จักขยะใกล้ตัว อายุการย่อยสลายของสิ่งของรอบตัว และหลักการ 7R เพื่อการลดขยะอย่างยั่งยืน">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=Prompt:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Preloader Screen -->
+  <div id="preloader">
+    <div class="preloader-spinner"></div>
+    <div class="fw-bold fs-5 text-success">กำลังโหลดข้อมูลขยะในชีวิตประจำวัน...</div>
+  </div>
+
+  <!-- Unified Navigation Bar Placeholder -->
+  <div id="navbar-placeholder"></div>
+
+ <!-- Hero Banner with Background Image -->
+  <header class="hero-wrapper" style="min-height: 45vh;">
+    <!-- รูปภาพพื้นหลัง (เปลี่ยนชื่อรูปตรง src ได้ตามต้องการ) -->
+    <img 
+      src="assets/images/23e99aee186e565df31dfa96885f300a.jpg" 
+      alt="ภาพพื้นหลังขยะในชีวิตประจำวัน" 
+      class="hero-bg-img"
+    >
+    <!-- แผ่นกรองแสงสีกลมกลืน (Overlay) -->
+    <div class="hero-overlay"></div>
+    <!-- ข้อความเนื้อหา -->
+    <div class="container text-center hero-content py-4">
+      <span class="badge-pill-soft mb-3 reveal-fade-up">
+        <i class="fa-solid fa-recycle text-success"></i> รู้จักขยะรอบตัว
+      </span>
+      <h1 class="display-4 fw-bold text-dark mb-3 reveal-fade-up">ขยะในชีวิตประจำวัน</h1>
+      <p class="fs-5 text-muted mx-auto reveal-fade-up" style="max-width: 720px;">
+        คนไทย 1 คนสร้างขยะเฉลี่ยวันละ <strong>1.14 กิโลกรัม</strong> หรือเกือบ 400 กิโลกรัมต่อปี การรู้ที่มาและคุณสมบัติของขยะแต่ละชิ้น คือหัวใจของการเริ่มต้นลดขยะ
+      </p>
+    </div>
+  </header>
+
+  <!-- Section 1: Types of Waste in Daily Life -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="section-title-wrap reveal-fade-up">
+        <span class="section-subtitle">จำแนกประเภท</span>
+        <h2 class="section-title">4 แหล่งขยะที่พบมากที่สุดในชีวิตประจำวัน</h2>
+        <p class="section-desc">เราผลิตขยะเหล่านี้อยู่ทุกวันโดยไม่รู้ตัว</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Single Use Plastic -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up">
+          <div class="glass-card p-4 h-100">
+            <div class="brand-icon-wrap mb-3" style="background: linear-gradient(135deg, #3a86c8, #0077b6);">
+              <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+            <h5 class="fw-bold mb-2">พลาสติกใช้ครั้งเดียวทิ้ง</h5>
+            <p class="small text-muted mb-3">
+              ถุงหูหิ้ว หลอดกาแฟ ช้อนส้อมพลาสติก และแก้วน้ำ ใช้เวลาผลิตเพียงไม่กี่วินาที ใช้จริงไม่ถึง 20 นาที แต่อยู่บนโลกนานกว่า 450 ปี
+            </p>
+            <span class="badge bg-primary-subtle text-primary rounded-pill small">สัดส่วน ~ 21%</span>
+          </div>
+        </div>
+
+        <!-- 2. Food Waste -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up">
+          <div class="glass-card p-4 h-100">
+            <div class="brand-icon-wrap mb-3" style="background: linear-gradient(135deg, #2e7d32, #40916c);">
+              <i class="fa-solid fa-bowl-rice"></i>
+            </div>
+            <h5 class="fw-bold mb-2">ขยะเศษอาหาร (Food Waste)</h5>
+            <p class="small text-muted mb-3">
+              อาหารกินเหลือ วัตถุดิบเน่าเสีย และเปลือกพืช เมื่อถูกทับถมในบ่อขยะจะเกิดก๊าซมีเทนที่มีผลต่อภาวะเรือนกระจกมากกว่า CO2 ถึง 25 เท่า
+            </p>
+            <span class="badge bg-success-subtle text-success rounded-pill small">สัดส่วน ~ 46%</span>
+          </div>
+        </div>
+
+        <!-- 3. Packaging & Paper -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up">
+          <div class="glass-card p-4 h-100">
+            <div class="brand-icon-wrap mb-3" style="background: linear-gradient(135deg, #f4a261, #e76f51);">
+              <i class="fa-solid fa-box-open"></i>
+            </div>
+            <h5 class="fw-bold mb-2">บรรจุภัณฑ์และกระดาษ</h5>
+            <p class="small text-muted mb-3">
+              กล่องพัสดุช้อปปิ้งออนไลน์ ซองขนม กล่องกระดาษ และบับเบิ้ลกันกระแทก เติบโตขึ้นอย่างรวดเร็วตามพฤติกรรมการสั่งซื้อออนไลน์
+            </p>
+            <span class="badge bg-warning-subtle text-dark rounded-pill small">สัดส่วน ~ 18%</span>
+          </div>
+        </div>
+
+        <!-- 4. E-Waste & Toxic -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up">
+          <div class="glass-card p-4 h-100">
+            <div class="brand-icon-wrap mb-3" style="background: linear-gradient(135deg, #d62828, #9d0208);">
+              <i class="fa-solid fa-plug"></i>
+            </div>
+            <h5 class="fw-bold mb-2">ขยะอิเล็กทรอนิกส์ & สารพิษ</h5>
+            <p class="small text-muted mb-3">
+              สายชาร์จ หูฟังพัง ถ่านไฟฉาย และเครื่องใช้ไฟฟ้า มีสารตะกั่ว แคดเมียม และสารพิษที่ซึมลงสู่น้ำบาดาลหากไม่แยกทิ้งเฉพาะ
+            </p>
+            <span class="badge bg-danger-subtle text-danger rounded-pill small">สัดส่วน ~ 15%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2: Decomposition Timeline Cards (How long trash lasts) -->
+  <section class="section-padding" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="section-title-wrap reveal-fade-up">
+        <span class="section-subtitle">อายุยืนยาวกว่ามนุษย์</span>
+        <h2 class="section-title">ขยะแต่ละชิ้น ใช้เวลาย่อยสลายนานแค่ไหน?</h2>
+        <p class="section-desc">สิ่งที่เราทิ้งในวันนี้ อาจยังคงอยู่บนโลกนี้ไปอีกหลายร้อยปี</p>
+      </div>
+
+      <div class="row g-3">
+        <!-- Item 1: Banana Peel -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card decomp-card">
+            <div class="decomp-icon">
+              <i class="fa-solid fa-apple-whole"></i>
+            </div>
+            <div>
+              <div class="fw-bold fs-6">เปลือกผลไม้ / เศษอาหาร</div>
+              <div class="decomp-years">2 - 6 สัปดาห์</div>
+              <small class="text-muted">ย่อยสลายได้เร็วที่สุดตามธรรมชาติ</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Paper -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card decomp-card">
+            <div class="decomp-icon">
+              <i class="fa-solid fa-newspaper"></i>
+            </div>
+            <div>
+              <div class="fw-bold fs-6">กระดาษและหนังสือพิมพ์</div>
+              <div class="decomp-years">2 - 5 เดือน</div>
+              <small class="text-muted">ทำจากเยื่อไม้ธรรมชาติ ย่อยสลายง่าย</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Milk Carton -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card decomp-card">
+            <div class="decomp-icon">
+              <i class="fa-solid fa-blender"></i>
+            </div>
+            <div>
+              <div class="fw-bold fs-6">กล่องนม UHT (เคลือบฟอยล์)</div>
+              <div class="decomp-years">5 ปี</div>
+              <small class="text-muted">มีชั้นอลูมิเนียมและฟิล์มพลาสติกประกบ</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Cigarette Butt -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card decomp-card">
+            <div class="decomp-icon">
+              <i class="fa-solid fa-smoking"></i>
+            </div>
+            <div>
+              <div class="fw-bold fs-6">ก้นกรองบุหรี่</div>
+              <div class="decomp-years">10 - 12 ปี</div>
+              <small class="text-muted">ผลิตจากเส้นใยพลาสติกเซลลูโลสอะซิเตท</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Soda Can -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card decomp-card">
+            <div class="decomp-icon">
+              <i class="fa-solid fa-wine-bottle"></i>
+            </div>
+            <div>
+              <div class="fw-bold fs-6">กระป๋องอลูมิเนียม</div>
+              <div class="decomp-years">200 - 500 ปี</div>
+              <small class="text-muted">ควรรีไซเคิล เพราะหลอมใหม่ได้ไม่จำกัด</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Plastic Bottle -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card decomp-card">
+            <div class="decomp-icon">
+              <i class="fa-solid fa-bottle-water"></i>
+            </div>
+            <div>
+              <div class="fw-bold fs-6">ขวดน้ำพลาสติก PET</div>
+              <div class="decomp-years">450 ปี</div>
+              <small class="text-muted">แตกเป็นไมโครพลาสติกไม่หายไปไหน</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: Disposable Diaper -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card decomp-card">
+            <div class="decomp-icon">
+              <i class="fa-solid fa-baby"></i>
+            </div>
+            <div>
+              <div class="fw-bold fs-6">ผ้าอ้อมสำเร็จรูป / ผ้าอนามัย</div>
+              <div class="decomp-years">500 ปี</div>
+              <small class="text-muted">มีเจลดูดซับน้ำและพลาสติกสังเคราะห์</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 8: Styrofoam -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card decomp-card">
+            <div class="decomp-icon">
+              <i class="fa-solid fa-box"></i>
+            </div>
+            <div>
+              <div class="fw-bold fs-6">กล่องโฟมบรรจุอาหาร</div>
+              <div class="decomp-years text-danger">ไม่ย่อยสลาย</div>
+              <small class="text-muted">แตกเป็นเม็ดโฟมเล็กๆ ปนเปื้อนตลอดกาล</small>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 9: Glass Bottle -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card decomp-card">
+            <div class="decomp-icon">
+              <i class="fa-solid fa-champagne-glasses"></i>
+            </div>
+            <div>
+              <div class="fw-bold fs-6">ขวดแก้ว</div>
+              <div class="decomp-years text-danger">1,000,000+ ปี</div>
+              <small class="text-muted">เกือบไม่ย่อยสลาย แต่รีไซเคิลได้ 100%</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3: The 7R Principles in Action -->
+  <section class="section-padding" id="section7R">
+    <div class="container">
+      <div class="section-title-wrap reveal-fade-up">
+        <span class="section-subtitle">วิถีชีวิตยั่งยืน</span>
+        <h2 class="section-title">หลัก 7R ลดขยะในชีวิตประจำวัน</h2>
+        <p class="section-desc">มากกว่าแค่ Recycle คือการปรับวิธีคิดตั้งแต่ก่อนตัดสินใจซื้อ</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- 1. Rethink -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up">
+          <div class="glass-card r7-card h-100">
+            <span class="r7-badge">1R</span>
+            <div class="brand-icon-wrap mx-auto mb-3" style="background: linear-gradient(135deg, #1b4332, #2d6a4f);">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Rethink (คิดใหม่)</h5>
+            <p class="small text-muted">
+              เปลี่ยนความคิดก่อนซื้อ "จำเป็นจริงไหม หรือแค่อยากได้ชั่วคราว?" เลือกของที่ทนทานและเป็นมิตรกับสิ่งแวดล้อม
+            </p>
+          </div>
+        </div>
+
+        <!-- 2. Refuse -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up">
+          <div class="glass-card r7-card h-100">
+            <span class="r7-badge">2R</span>
+            <div class="brand-icon-wrap mx-auto mb-3" style="background: linear-gradient(135deg, #c1121f, #780000);">
+              <i class="fa-solid fa-ban"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Refuse (ปฏิเสธ)</h5>
+            <p class="small text-muted">
+              ปฏิเสธสิ่งที่ไม่จำเป็น เช่น ถุงพลาสติกจากร้านสะดวกซื้อ หลอดกาแฟ ช้อนส้อมพลาสติก และโบรชัวร์กระดาษ
+            </p>
+          </div>
+        </div>
+
+        <!-- 3. Reduce -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up">
+          <div class="glass-card r7-card h-100">
+            <span class="r7-badge">3R</span>
+            <div class="brand-icon-wrap mx-auto mb-3" style="background: linear-gradient(135deg, #e05a32, #c44722);">
+              <i class="fa-solid fa-arrow-down-short-wide"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Reduce (ลดการใช้)</h5>
+            <p class="small text-muted">
+              ลดปริมาณการสร้างขยะ เช่น ซื้อสินค้าแบบเติม (Refill) ลดการกินอาหารเหลือ สั่งอาหารแต่พอดี
+            </p>
+          </div>
+        </div>
+
+        <!-- 4. Reuse -->
+        <div class="col-md-6 col-lg-3 reveal-fade-up">
+          <div class="glass-card r7-card h-100">
+            <span class="r7-badge">4R</span>
+            <div class="brand-icon-wrap mx-auto mb-3" style="background: linear-gradient(135deg, #2ec4b6, #0f4c5c);">
+              <i class="fa-solid fa-arrows-spin"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Reuse (ใช้ซ้ำ)</h5>
+            <p class="small text-muted">
+              พกถุงผ้า กระบอกน้ำพกพา กล่องข้าว นำถุงพลาสติกเก่ามาใช้ซ้ำเป็นถุงขยะ หรือนำขวดแก้วมาใส่เครื่องปรุง
+            </p>
+          </div>
+        </div>
+
+        <!-- 5. Repair -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card r7-card h-100">
+            <span class="r7-badge">5R</span>
+            <div class="brand-icon-wrap mx-auto mb-3" style="background: linear-gradient(135deg, #584034, #8d6e63);">
+              <i class="fa-solid fa-wrench"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Repair (ซ่อมแซม)</h5>
+            <p class="small text-muted">
+              ของพังอย่าเพิ่งทิ้ง ซ่อมแซมเสื้อผ้าที่ขาด อุปกรณ์ไฟฟ้าที่ชำรุด หรือเฟอร์นิเจอร์ เพื่อยืดอายุการใช้งานให้นานที่สุด
+            </p>
+          </div>
+        </div>
+
+        <!-- 6. Recycle -->
+        <div class="col-md-6 col-lg-4 reveal-fade-up">
+          <div class="glass-card r7-card h-100">
+            <span class="r7-badge">6R</span>
+            <div class="brand-icon-wrap mx-auto mb-3" style="background: linear-gradient(135deg, #f4a261, #e76f51);">
+              <i class="fa-solid fa-recycle"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Recycle (แปรรูปใหม่)</h5>
+            <p class="small text-muted">
+              คัดแยกขวดพลาสติก กระป๋อง แก้ว กระดาษ ล้างให้สะอาดก่อนส่งต่อไปยังโรงงานรีไซเคิลเพื่อผลิตเป็นวัสดุใหม่
+            </p>
+          </div>
+        </div>
+
+        <!-- 7. Rot / Return -->
+        <div class="col-md-12 col-lg-4 reveal-fade-up">
+          <div class="glass-card r7-card h-100">
+            <span class="r7-badge">7R</span>
+            <div class="brand-icon-wrap mx-auto mb-3" style="background: linear-gradient(135deg, #38b000, #007200);">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <h5 class="fw-bold mb-2">Rot (หมักเป็นปุ๋ย)</h5>
+            <p class="small text-muted">
+              นำเศษผักผลไม้และเศษอาหารมาหมักทำปุ๋ยอินทรีย์ ปลูกผักสวนครัว คืนแร่ธาตุสู่ธรรมชาติโดยไม่ต้องส่งไปฝังกลบ
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4: Tips for Cleaning Waste Before Sorting -->
+  <section class="section-padding" style="background: var(--bg-secondary);">
+    <div class="container">
+      <div class="glass-card p-4 p-md-5 reveal-fade-up">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <span class="section-subtitle">ฮาวทูแยกขยะให้ได้ผลจริง</span>
+            <h3 class="fw-bold mb-3" style="color: var(--color-brand-deep);">
+              3 ขั้นตอนง่ายๆ: "เท - ล้าง - บีบ" ก่อนทิ้ง
+            </h3>
+            <div class="d-flex flex-column gap-3">
+              <div class="d-flex align-items-start gap-3">
+                <div class="badge bg-success rounded-circle p-2 px-3 fw-bold fs-6">1</div>
+                <div>
+                  <h6 class="fw-bold mb-1">เทของเหลวออกให้หมด</h6>
+                  <p class="small text-muted mb-0">น้ำหวาน ชานม หรือเศษแกงที่ตกค้างจะทำให้ขยะรีไซเคิลปนเปื้อนและเน่าเสีย</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="badge bg-success rounded-circle p-2 px-3 fw-bold fs-6">2</div>
+                <div>
+                  <h6 class="fw-bold mb-1">ล้างน้ำสะอาดและผึ่งแห้ง</h6>
+                  <p class="small text-muted mb-0">บ้วนน้ำล้างคราบไขมัน 1 รอบ ช่วยป้องกันมด แมลงสาบ และกลิ่นเหม็น</p>
+                </div>
+              </div>
+              <div class="d-flex align-items-start gap-3">
+                <div class="badge bg-success rounded-circle p-2 px-3 fw-bold fs-6">3</div>
+                <div>
+                  <h6 class="fw-bold mb-1">บีบให้แบน / ยุบขนาด</h6>
+                  <p class="small text-muted mb-0">เหยียบขวดหรือพับกล่องลังให้แบน ช่วยประหยัดพื้นที่จัดเก็บและลดพลังงานขนส่ง</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="p-4 rounded-4 bg-white bg-opacity-75 shadow-sm">
+              <i class="fa-solid fa-hand-holding-heart display-1 text-success mb-3"></i>
+              <h5 class="fw-bold mb-2">ปลอดภัยต่อพี่ๆ พนักงานเก็บขยะ</h5>
+              <p class="small text-muted mb-3">
+                การห่อเศษแก้วแตก หรือแยกขยะอันตรายใส่ถุงใสแปะป้ายชัดเจน ช่วยปกป้องเจ้าหน้าที่จากการถูกบาดและสัมผัสสารเคมีอันตราย
+              </p>
+              <a href="game.html" class="btn btn-eco-primary btn-sm px-4">
+                <i class="fa-solid fa-gamepad me-1"></i> ลองทดสอบความรู้ในเกม
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-to-top" id="scrollTopBtn" title="กลับขึ้นด้านบน" aria-label="กลับขึ้นด้านบน">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Unified Footer Placeholder -->
+  <div id="footer-placeholder"></div>
+
+  <!-- Bootstrap 5 Bundle JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  <!-- Unified Navbar & Footer Component -->
+  <script src="assets/js/navbar-footer.js"></script>
+
+  <!-- Main JS -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Audio Manager (BGM & SFX) -->
+  <script src="assets/js/audio-manager.js"></script>
+
+</body>
+</html>

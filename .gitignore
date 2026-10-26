@@ -1,0 +1,10 @@
+# Logs & Cache
+*.log
+.DS_Store
+Thumbs.db
+
+# IDEs & Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
