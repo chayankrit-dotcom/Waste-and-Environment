@@ -123,7 +123,7 @@
             <!-- Social / Eco Tips -->
             <div class="col-md-3 text-md-end text-center">
               <div class="d-inline-flex gap-2">
-                <a href="game.html" class="btn btn-sm btn-eco-primary"><i class="fa-solid fa-trophy me-1"></i> ท้าทายคะแนน</a>
+                <a href="game.html" class="btn btn-sm btn-eco-primary"><i class="fa-solid fa-trophy me-1"></i> ท้าทายเกม</a>
               </div>
             </div>
           </div>
